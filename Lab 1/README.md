@@ -78,3 +78,8 @@ I don't understand the difference.
 \*\***Summarize feedback from your partners here.**\*\*
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+Setup video (unsuccessful):
+https://drive.google.com/file/d/1absDno7e5O82N0nhYoZJgYhzsQTMNQko/view?usp=sharing
+
+
