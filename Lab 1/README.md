@@ -28,6 +28,7 @@ Labs are due on Mondays. Make sure this page is linked to on your main class hub
 ## Part A. Plan 
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
+
 Setting: Anywhere an opaque door seperates two rooms
 
 Players: Two humans who are capable of moving through a door.
@@ -38,10 +39,12 @@ Goals: Get through the door without accidentally hitting the other person.
 
 
 \*\***Include a picture of your storyboard here**\*\*
+
 https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/510ee0d906e6f82bed40815f2ed56264ac5ff60c/Lab%201/Storyboard.png
 
 
 \*\***Summarize feedback you got here.**\*\*
+
 Concerns were about it being unclear about what is actually happening on the other side of the door. How can we make a warning that doesn't feel threatening?
 
 
@@ -49,17 +52,25 @@ Concerns were about it being unclear about what is actually happening on the oth
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
+Not really. Acted out made me realize the true benefit of such a system would be to not hit another person from behind the door. Initially the project was focused around the awkwardness of two people trying to move through a room, rather than the safety reprocussions.
+
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+
+Yes, that this could be a safer way to move through doors, rather than juse reducing awkwardness.
 
 
 ## Part C. Prototype the device
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
 
+It's a nice prototype, but frustrating for what it is. Might be easier to upload something like this to Google Play or an App Store and have students use that rather than messing around with slack.
+
 
 ## Part D. Wizard the device
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
+
+https://drive.google.com/file/d/1absDno7e5O82N0nhYoZJgYhzsQTMNQko/view?usp=sharing
 
 \*\***Show the follow-up work here.**\*\*
 I don't understand the difference.
@@ -69,20 +80,42 @@ I don't understand the difference.
 
 \*\***Include sketches of what your device might look like here.**\*\*
 
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/510ee0d906e6f82bed40815f2ed56264ac5ff60c/Lab%201/PNG%20image.png
+
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
+I'm being caught up in the color theory of it all. I wanted to avoid using flashing red lights as that feels like its conveying a very potent danger, rather than a simple bonk by a door. I'm also caught up on the verbage; it definitely needs some written instructions, since someone being behind a door is non-obvious as to that being what the light is for.
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
+https://drive.google.com/file/d/1Y9tiyHVU3jKUIPHSryAiN5i12alsPTeH/view?usp=sharing
+
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 
+Andrew Vincent Scibelli <avs57@cornell.edu>
+
+Jenny Li <jl2852@cornell.edu>
+
+Larry Xu <qx36@cornell.edu>
 
 
 # Staging Interaction, Part 2 
 
 \*\***Summarize feedback from your partners here.**\*\*
+
+Our use-cases:
+-Detection
+-Discrete stages (potentially binary but may be more useful with more stages)
+-Timing things, especially multiple timers at once
+ 
+Our ideas:
+-Light on your door to tell if you’re about to use the incorrect key on the lock.
+-Light outside an elevator to tell you whether there are people inside/getting off
+-Light outside the fridge to communicate if food inside is expired
+-Cooking-related things with stages like chocolate tempering or caramelizing sugar
+-We also talked about how anything with doors would work because of a lack of visibility through the door and issues timing when to go through.
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
 
