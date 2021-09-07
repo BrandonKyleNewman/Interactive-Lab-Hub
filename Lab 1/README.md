@@ -28,14 +28,21 @@ Labs are due on Mondays. Make sure this page is linked to on your main class hub
 ## Part A. Plan 
 
 \*\***Describe your setting, players, activity and goals here.**\*\*
+Setting: Anywhere an opaque door seperates two rooms
 
-Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
+Players: Two humans who are capable of moving through a door.
+
+Activity: Both are about to open the door at approximately the same time.
+
+Goals: Get through the door without accidentally hitting the other person.
+
 
 \*\***Include a picture of your storyboard here**\*\*
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/510ee0d906e6f82bed40815f2ed56264ac5ff60c/Lab%201/Storyboard.png
 
-Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
+Concerns were about it being unclear about what is actually happening on the other side of the door. How can we make a warning that doesn't feel threatening?
 
 
 ## Part B. Act out the Interaction
@@ -79,7 +86,15 @@ I don't understand the difference.
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
 
+Storyboard: https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/510ee0d906e6f82bed40815f2ed56264ac5ff60c/Lab%201/Storyboard.png
+
 Setup video (unsuccessful):
 https://drive.google.com/file/d/1absDno7e5O82N0nhYoZJgYhzsQTMNQko/view?usp=sharing
+
+Costumed Device Sketch:
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/510ee0d906e6f82bed40815f2ed56264ac5ff60c/Lab%201/PNG%20image.png
+
+Prototype Actions:
+https://drive.google.com/file/d/1Y9tiyHVU3jKUIPHSryAiN5i12alsPTeH/view?usp=sharing
 
 
