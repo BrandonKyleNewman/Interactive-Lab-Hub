@@ -129,6 +129,6 @@ Costumed Device Sketch:
 https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/6d04b838cfa9ddd0307f375e4538de7feec2c006/Lab%201/part-2.png
 
 Prototype Actions:
-https://drive.google.com/file/d/1vcnS3wvigVX6v_KVCxNpO8jzSuimgtOz/view?usp=sharing
+https://drive.google.com/file/d/1HggQ6WI3O_y4rDSCr8O_cOtXb6W6nW3c/view?usp=sharing
 
 
