@@ -100,11 +100,6 @@ Jenny Li <jl2852@cornell.edu>
 
 Larry Xu <qx36@cornell.edu>
 
-
-# Staging Interaction, Part 2 
-
-\*\***Summarize feedback from your partners here.**\*\*
-
 Our use-cases:
 -Detection
 -Discrete stages (potentially binary but may be more useful with more stages)
@@ -116,6 +111,15 @@ Our ideas:
 -Light outside the fridge to communicate if food inside is expired
 -Cooking-related things with stages like chocolate tempering or caramelizing sugar
 -We also talked about how anything with doors would work because of a lack of visibility through the door and issues timing when to go through.
+
+
+# Staging Interaction, Part 2 
+
+\*\***Summarize feedback from your partners here.**\*\*
+
+The good: Thought was put into the color blue. Non-threatening, but still indicative of something. Good enough concept
+
+The bad: Worry about visibility and accessibility. New prototype uses sound for the vision impaired. Just thought about putting the device on the center of the door for visibility, but unfortunately I just thought about that and it isn't apart of my modified lab :(
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
 
