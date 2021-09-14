@@ -119,15 +119,12 @@ Our ideas:
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
 
-Storyboard: https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/510ee0d906e6f82bed40815f2ed56264ac5ff60c/Lab%201/Storyboard.png
-
-Setup video (unsuccessful):
-https://drive.google.com/file/d/1absDno7e5O82N0nhYoZJgYhzsQTMNQko/view?usp=sharing
+Storyboard: https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/6d04b838cfa9ddd0307f375e4538de7feec2c006/Lab%201/storyboard-2.png
 
 Costumed Device Sketch:
-https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/510ee0d906e6f82bed40815f2ed56264ac5ff60c/Lab%201/PNG%20image.png
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/6d04b838cfa9ddd0307f375e4538de7feec2c006/Lab%201/part-2.png
 
 Prototype Actions:
-https://drive.google.com/file/d/1Y9tiyHVU3jKUIPHSryAiN5i12alsPTeH/view?usp=sharing
+https://drive.google.com/file/d/1vcnS3wvigVX6v_KVCxNpO8jzSuimgtOz/view?usp=sharing
 
 
