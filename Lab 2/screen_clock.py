@@ -65,7 +65,19 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     y = top
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
-    draw.text((x,y), time.strftime("%m/%d/%Y %H:%M:%S"), end="", flush=True)
+    current_time = time.localtime()
+    
+    current_season = "Winter"
+    if time.localtime().tm_mon in ["3","4","5"]:
+        current_season = "Spring"
+    elif time.localtime().tm_mon in ["6","7","8"]:
+        current_season = "Summer"
+    elif time.localtime().tm_mon in ["9","10","11"]:
+        current_season = "Autumn"
+
+    current_hour = time.localtime().tm_hour
+
+draw.text((x,y), time.strftime("%m/%d/%Y %H:%M:%S"), end="", flush=True)
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
