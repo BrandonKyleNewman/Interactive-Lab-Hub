@@ -66,21 +66,21 @@ while True:
     y = top
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
     if time.localtime().tm_mon in ["3","4","5"]:
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
+        draw.rectangle((0, 0, width, height), outline=0, fill=9DFB85)
         current_season = "Spring"
     elif time.localtime().tm_mon in ["6","7","8"]:
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
+        draw.rectangle((0, 0, width, height), outline=0, fill=FF5733)
         current_season = "Summer"
     elif time.localtime().tm_mon in ["9","10","11"]:
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
+        draw.rectangle((0, 0, width, height), outline=0, fill=FF3F32)
         current_season = "Autumn"
     else:
         current_season = "Winter"
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
+        draw.rectangle((0, 0, width, height), outline=0, fill=C6F6FF)
 
     current_hour = time.localtime().tm_hour
 
-draw.text((x,y), time.strftime("%m/%d/%Y %H:%M:%S"), end="", flush=True)
+    draw.text((x,y), "It's, uh, " + current_season + " and about " + str(current_hour) + "ish", end="", flush=True)
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
