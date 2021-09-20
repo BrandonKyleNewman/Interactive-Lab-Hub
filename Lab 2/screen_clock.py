@@ -65,15 +65,18 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     y = top
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
-    current_time = time.localtime()
-    
-    current_season = "Winter"
     if time.localtime().tm_mon in ["3","4","5"]:
+        draw.rectangle((0, 0, width, height), outline=0, fill=0)
         current_season = "Spring"
     elif time.localtime().tm_mon in ["6","7","8"]:
+        draw.rectangle((0, 0, width, height), outline=0, fill=0)
         current_season = "Summer"
     elif time.localtime().tm_mon in ["9","10","11"]:
+        draw.rectangle((0, 0, width, height), outline=0, fill=0)
         current_season = "Autumn"
+    else:
+        current_season = "Winter"
+        draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     current_hour = time.localtime().tm_hour
 
