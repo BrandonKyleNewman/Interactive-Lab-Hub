@@ -80,7 +80,7 @@ while True:
 
     current_hour = time.localtime().tm_hour
 
-    draw.text((x,y), "It's, uh, " + current_season + " and about " + str(current_hour) + "ish", font=font, end="", flush=True)
+    draw.text((x,y), "It's, uh, " + current_season + " and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
