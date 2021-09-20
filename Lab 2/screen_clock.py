@@ -53,7 +53,7 @@ x = 0
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
-font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
+font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 36)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
@@ -80,7 +80,7 @@ while True:
 
     current_hour = time.localtime().tm_hour
 
-    draw.text((x,y), "It's, uh, " + current_season + " and about " + str(current_hour) + "ish", end="", flush=True)
+    draw.text((x,y), "It's, uh, " + current_season + " and about " + str(current_hour) + "ish", font=font, end="", flush=True)
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
