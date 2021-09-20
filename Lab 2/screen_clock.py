@@ -53,7 +53,7 @@ x = 0
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
-font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 36)
+font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
@@ -65,13 +65,13 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     y = top
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
-    if time.localtime().tm_mon in ["3","4","5"]:
+    if str(time.localtime().tm_mon) in ["3","4","5"]:
         draw.rectangle((0, 0, width, height), outline=0, fill=(140, 229, 151))
         current_season = "Spring"
-    elif time.localtime().tm_mon in ["6","7","8"]:
+    elif str(time.localtime().tm_mon) in ["6","7","8"]:
         draw.rectangle((0, 0, width, height), outline=0, fill=(255, 226, 68))
         current_season = "Summer"
-    elif time.localtime().tm_mon in ["9","10","11"]:
+    elif str(time.localtime().tm_mon) in ["9","10","11"]:
         draw.rectangle((0, 0, width, height), outline=0, fill=(255, 111, 68))
         current_season = "Autumn"
     else:
@@ -81,6 +81,8 @@ while True:
     current_hour = time.localtime().tm_hour
 
     draw.text((x,y), "It's, uh, " + current_season + " and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
+    y += 24
+    draw.text((x,y), "and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560"
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
