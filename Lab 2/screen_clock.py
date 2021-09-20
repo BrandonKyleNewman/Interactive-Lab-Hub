@@ -82,7 +82,7 @@ while True:
 
     draw.text((x,y), "It's, uh, " + current_season + " and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
     y += 24
-    draw.text((x,y), "and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560"
+    draw.text((x,y), "and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
