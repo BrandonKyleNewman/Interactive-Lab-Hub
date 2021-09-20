@@ -78,9 +78,11 @@ while True:
         current_season = "Winter"
         draw.rectangle((0, 0, width, height), outline=0, fill=(198, 246, 255))
 
-    current_hour = time.localtime().tm_hour
+    current_hour = time.localtime().tm_hour % 12
+    if current_hour == 0:
+        current_hour = 12
 
-    draw.text((x,y), "It's, uh, " + current_season + " and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
+    draw.text((x,y), "It's, uh, " + current_season, font=font, flush=True, fill="#5E1560")
     y += 24
     draw.text((x,y), "and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
     # Display image.
