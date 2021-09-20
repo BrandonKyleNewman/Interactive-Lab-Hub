@@ -79,7 +79,7 @@ while True:
 
     # Write four lines of text.
     y = top
-    draw.text((x, y), IP, font=font, fill="#FFFFFF")
+    draw.text((x, y), 'Bill Peach fan club', font=font, fill="#FFFFFF")
     y += font.getsize(IP)[1]
     draw.text((x, y), WTTR, font=font, fill="#FFFF00")
     y += font.getsize(WTTR)[1]
