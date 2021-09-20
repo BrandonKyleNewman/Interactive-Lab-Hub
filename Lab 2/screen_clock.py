@@ -2,6 +2,7 @@ import time
 import subprocess
 import digitalio
 import board
+import random
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
 
@@ -68,15 +69,19 @@ while True:
     if str(time.localtime().tm_mon) in ["3","4","5"]:
         draw.rectangle((0, 0, width, height), outline=0, fill=(140, 229, 151))
         current_season = "Spring"
+        random_sayings = ["It's sprung brother", "Smell a flower, dude", "Grab an umbrella, brother"]
     elif str(time.localtime().tm_mon) in ["6","7","8"]:
         draw.rectangle((0, 0, width, height), outline=0, fill=(255, 226, 68))
         current_season = "Summer"
+        random_sayings = ["Get some rays, bro", "Suns out, guns out, bro", "Don't forget sunscreen, bro"]
     elif str(time.localtime().tm_mon) in ["9","10","11"]:
         draw.rectangle((0, 0, width, height), outline=0, fill=(255, 111, 68))
         current_season = "Autumn"
+        random_sayings = ["Crunchy leaves, bro", "Pumpkin spice me, bro", "Grab a coat, bro"]
     else:
         current_season = "Winter"
         draw.rectangle((0, 0, width, height), outline=0, fill=(198, 246, 255))
+        random_sayings = ["It's a wonderland, bro", "Build a snowman, bro", "Does it snow in California?"]
 
     current_hour = time.localtime().tm_hour % 12
     if current_hour == 0:
@@ -85,6 +90,8 @@ while True:
     draw.text((x,y), "It's, uh, " + current_season, font=font, flush=True, fill="#5E1560")
     y += 24
     draw.text((x,y), "and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
+    y += 48
+    draw.text((x,y), random.choice(random_sayings), font=font, flush=True, fill="#5E1560")
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)
