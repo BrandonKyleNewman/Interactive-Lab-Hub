@@ -195,6 +195,11 @@ https://drive.google.com/file/d/1Tinc5_e4odDXAM-EOSrhryZV02HSKsUl/view?usp=shari
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 
+Brainstorm:
+* Little animated guy talking in the bottom of the screen
+* Fix the randomness issue, can be solved outside the while loop, or be a timer or something
+* Better text management
+* Animated components of the season (snowfall, sunshine, etc)
 
 # Prep for Part 2
 
