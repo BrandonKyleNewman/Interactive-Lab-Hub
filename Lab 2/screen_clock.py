@@ -55,6 +55,7 @@ x = 0
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
+font_2 = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 12)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
@@ -96,7 +97,7 @@ while True:
     y += 24
     draw.text((x,y), "and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
     y += 48
-    draw.text((x,y), random.choice(random_sayings), font=font, flush=True, fill="#5E1560")
+    draw.text((x+width/2,y), random.choice(random_sayings), font=font_2, flush=True, fill="#5E1560")
     # Display image.
     disp.image(season_image, rotation)
     time.sleep(1)
