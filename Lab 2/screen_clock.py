@@ -81,17 +81,18 @@ while True:
         current_season = "Autumn"
         random_sayings = ["Crunchy leaves, bro", "Pumpkin spice me, bro", "Grab a coat, bro"]
         season_image = Image.open('autumn.png').convert('RGBA')
+        draw = ImageDraw.Draw(image)
     else:
         current_season = "Winter"
         draw.rectangle((0, 0, width, height), outline=0, fill=(198, 246, 255))
         random_sayings = ["It's a wonderland, bro", "Build a snowman, bro", "Does it snow in California?"]
         season_image = Image.open('winter.png').convert('RGBA')
-
+       
     current_hour = time.localtime().tm_hour % 12
     if current_hour == 0:
         current_hour = 12
 
-    draw.draw((0,0), season_image)
+    draw = ImageDraw.Draw(season_image)
     draw.text((x,y), "It's, uh, " + current_season, font=font, flush=True, fill="#5E1560")
     y += 24
     draw.text((x,y), "and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
