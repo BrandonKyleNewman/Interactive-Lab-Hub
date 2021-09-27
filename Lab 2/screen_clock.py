@@ -78,8 +78,6 @@ while True:
         season_image = Image.open('summer.png').convert('RGBA')
     elif str(time.localtime().tm_mon) in ["9","10","11"]:
         season_image = Image.open('autumn.png').convert('RGBA')
-        draw = ImageDraw.Draw(season_image)
-        disp.image(image, rotation)
         draw.rectangle((0, 0, width, height), outline=0, fill=(255, 111, 68))
         current_season = "Autumn"
         random_sayings = ["Crunchy leaves, bro", "Pumpkin spice me, bro", "Grab a coat, bro"]
@@ -93,7 +91,7 @@ while True:
     if current_hour == 0:
         current_hour = 12
     
-    
+    draw.paste(season_image)
     draw.text((x,y), "It's, uh, " + current_season, font=font, flush=True, fill="#5E1560")
     y += 24
     draw.text((x,y), "and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
