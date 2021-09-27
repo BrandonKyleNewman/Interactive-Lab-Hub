@@ -98,5 +98,5 @@ while True:
     y += 48
     draw.text((x,y), random.choice(random_sayings), font=font, flush=True, fill="#5E1560")
     # Display image.
-    disp.image(season_image)
+    disp.image(season_image, rotation)
     time.sleep(1)
