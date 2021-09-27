@@ -81,7 +81,6 @@ while True:
         current_season = "Autumn"
         random_sayings = ["Crunchy leaves, bro", "Pumpkin spice me, bro", "Grab a coat, bro"]
         season_image = Image.open('autumn.png').convert('RGBA')
-        draw.image((0,0), season_image)
     else:
         current_season = "Winter"
         draw.rectangle((0, 0, width, height), outline=0, fill=(198, 246, 255))
