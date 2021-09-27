@@ -77,8 +77,8 @@ while True:
         random_sayings = ["Get some rays, bro", "Suns out, guns out, bro", "Don't forget sunscreen, bro"]
         season_image = Image.open('summer-1.png').convert('RGBA')
     elif str(time.localtime().tm_mon) in ["9","10","11"]:
-        #season_image = Image.open('autumn-1.png').convert('RGBA')
-        draw.rectangle((0, 0, width, height), outline=0, fill=(255, 111, 68))
+        season_image = Image.open('autumn-1.png').convert('RGBA')
+        #draw.rectangle((0, 0, width, height), outline=0, fill=(255, 111, 68))
         current_season = "Autumn"
         random_sayings = ["Crunchy leaves, bro", "Pumpkin spice me, bro", "Grab a coat, bro"]
     else:
