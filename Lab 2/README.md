@@ -215,6 +215,13 @@ Modify the code from last week's lab to make a new visual interface for your new
 
 As always, make sure you document contributions and ideas from others explicitly in your writeup.
 
-You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
+Write up:
 
+* decided to make it cuter rather and change it up too much. Couldn't figure out how to overlap the smaller pngs on top of a rectange, so just made a whole background image.
+* fixed the text up to stay on screen
+* Added a few more sayings
+* Sleep for 10 minutes after displaying. Keeps the saying on the screen longer, and maintains the heart of the unhelpful clock!
+
+No video, since it'd be static, but an image:
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/d92d714d7655d1f21a7be960bc0a0e812c110674/Lab%202/IMG_1049.jpeg
 
