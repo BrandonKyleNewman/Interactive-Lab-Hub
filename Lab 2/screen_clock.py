@@ -63,7 +63,7 @@ backlight.value = True
 
 while True:
     # Draw a black filled box to clear the image.
-    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    # draw.rectangle((0, 0, width, height), outline=0, fill=0)
     y = top
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
     if str(time.localtime().tm_mon) in ["3","4","5"]:
