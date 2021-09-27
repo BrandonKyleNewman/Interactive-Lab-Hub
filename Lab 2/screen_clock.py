@@ -92,7 +92,7 @@ while True:
     if current_hour == 0:
         current_hour = 12
 
-    draw.image((0,0), season_image)
+    draw.bitmap((0,0), season_image)
     draw.text((x,y), "It's, uh, " + current_season, font=font, flush=True, fill="#5E1560")
     y += 24
     draw.text((x,y), "and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
