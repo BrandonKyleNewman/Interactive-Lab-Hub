@@ -103,9 +103,11 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 
 \*\***Post your storyboard and diagram here.**\*\*
 
-Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/bdf20f5fa9af75125c502bc3844cca3846958b8c/Lab%203/Storyboard.png
 
 \*\***Please describe and document your process.**\*\*
+
+Output is fairly simple: press a button, and it shows the color on the screen and says it out loud. Select two colors at the same time and it shows and says what the merged color would be. After writing this, I realized it might be more interesting to have speech input as well. Could use "and" to denote the merging of colors.
 
 ### Acting out the dialogue
 
@@ -113,10 +115,15 @@ Find a partner, and *without sharing the script with your partner* try out the d
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
 
+https://cornell.zoom.us/rec/share/oQIhNAQK5mXl2I5imqWirNvLGW6D3am19r3-CVpRKhRmoXDJ3LyXXdgJOpUha_fQ.ISmPWSPSS94roHE6
+
+The dialogue was fine, but needed more explanation steps on the merging of colors. Should include more instructions in the initial step.
+
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
 
 \*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\*
+
 
 # Lab 3 Part 2
 
