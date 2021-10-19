@@ -219,12 +219,16 @@ Here is an example:
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/bb16a69f38b85cbdf0a54d1e8dd5943f70b8f481/Lab%204/sensor-ideation.pdf
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+Sensor placement and display are kind of tricky for gesture recognition. For the light and proximity use cases I've created, having it either be a set-it-and-forget-it type object works well, as well as having it be mobile (although I'm just now realizing the implications of the power source), but for gestures you want to have a clean base, and see the display. Perhaps its not as confusing as I thought though, placing the proximity sensor and the display on the same, top-most side, and having them be far apart might resolve the issues I'm imagining.
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+Virtual pet plant.
 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+I originally imagined the virtual pet plant to be a handheld, ala Tamagotchi, but the reliance on the power source ruins that idea. Otherwise, it's a fairly simple design, with the display in the center of the box, and the proximity sensor on the top of the box. Having the sensor on the top gives you (hopefully) maximum sunlight while having a head-on view of the display.
 
 Build a cardbord prototype of your design.
 
