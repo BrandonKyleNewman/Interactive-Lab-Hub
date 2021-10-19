@@ -233,6 +233,10 @@ I originally imagined the virtual pet plant to be a handheld, ala Tamagotchi, bu
 Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/0bc072f091a128fd80155b9a928cd6e24deea3dd/Lab%204/IMG_1091.jpeg
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/0bc072f091a128fd80155b9a928cd6e24deea3dd/Lab%204/IMG_1092.jpeg
+
+A basic cover for the Pi. Really shifts around in there, don't know how to mount it without it properly. Cut a small hole up top so the light sensor can work properly.
 
 
 LAB PART 2
