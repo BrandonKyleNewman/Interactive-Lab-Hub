@@ -78,6 +78,8 @@ total_lux_val = 0
 image_count = 0
 
 while True:
+    y = top
+    
     if total_lux_val >= (evolution_state+1)*LUX_STEP:
         evolution_state += 1
         #evolve
@@ -97,7 +99,7 @@ while True:
     curr_image_str = evolution_image_set.evolution_image_set[evolution_state][image_count%4]
     curr_image = Image.open(curr_image_str).convert('RGBA')
     
-    y = top
+    
     
     draw = ImageDraw.Draw(curr_image)
     draw.text((x,y), text_str, font=font, flush=True, fill="#5E1560")
