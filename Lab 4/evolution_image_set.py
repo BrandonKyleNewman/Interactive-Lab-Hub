@@ -19,16 +19,3 @@ evolution_image_set = [
 		'evolution_state_images/state_3/stage-3-3.png'
 	]
 ]
-
-create mode 100644 Lab 4/
- create mode 100644 Lab 4/
- create mode 100644 Lab 4/
- create mode 100644 Lab 4/
- create mode 100644 Lab 4/evolution_state_images/state_2/stage-2-0.png
- create mode 100644 Lab 4/
- create mode 100644 Lab 4/
- create mode 100644 Lab 4/
- create mode 100644 Lab 4/
- create mode 100644 Lab 4/
- create mode 100644 Lab 4/
- create mode 100644 Lab 4/
