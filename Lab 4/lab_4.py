@@ -70,7 +70,7 @@ backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
 
-EVOLUTION_MAX = 2
+EVOLUTION_MAX = 3
 LUX_STEP = 10000
 
 evolution_state = 0
@@ -81,31 +81,27 @@ while True:
     if total_lux_val >= (evolution_state+1)*LUX_STEP:
         evolution_state += 1
         #evolve
+        draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+        disp.image(image, rotation)
+        draw.text((x,y), "evolution time!", font=font, flush=True, fill="#5E1560")
+        time.sleep(7)
+        
     if evolution_state == EVOLUTION_MAX:
-        break
-    
+        text_str = "Press any button to play again"
+    else:
+        r, g, b, c = apds.color_data
+        curr_lux = colorutility.calculate_lux(r, g, b)
+        total_lux_val += curr_lux
+        text_str = str(total_lux_val)
+        
     curr_image_str = evolution_image_set.evolution_image_set[evolution_state][image_count%4]
     curr_image = Image.open(curr_image_str).convert('RGBA')
     
-    r, g, b, c = apds.color_data
-    curr_lux = colorutility.calculate_lux(r, g, b)
-    total_lux_val += curr_lux
-    
-    # Draw a black filled box to clear the image.
-    # draw.rectangle((0, 0, width, height), outline=0, fill=0)
     y = top
     
     draw = ImageDraw.Draw(curr_image)
-    draw.text((x,y), str(total_lux_val), font=font, flush=True, fill="#5E1560")
+    draw.text((x,y), text_str, font=font, flush=True, fill="#5E1560")
             
-    #draw.text((x,y), "It's, uh, " + current_season, font=font, flush=True, fill="#5E1560")
-    #y += 24
-    #draw.text((x,y), "and about " + str(current_hour) + "ish", font=font, flush=True, fill="#5E1560")
-    #y += 48
-    #draw.text((x+100,y), random.choice(random_sayings), font=font_2, flush=True, fill="#5E1560")
-    #y += 12
-    #draw.text((x+100,y), random.choice(["dude","bro","brother","my man", "my guy"]), font=font_2, fill="#5E1560")
-    # Display image.
     disp.image(curr_image, rotation)
     image_count += 1
     time.sleep(1)
