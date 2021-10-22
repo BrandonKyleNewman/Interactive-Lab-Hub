@@ -74,7 +74,7 @@ buttonB = digitalio.DigitalInOut(board.D24)
 buttonA.switch_to_input()
 buttonB.switch_to_input()
 
-EVOLUTION_MAX = 3
+EVOLUTION_MAX = 2
 LUX_STEP = 10000
 
 evolution_state = 0
@@ -89,29 +89,27 @@ while True:
         image = Image.new("RGB", (width, height))
         draw = ImageDraw.Draw(image)
         draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-        draw.text((x,y), "evolution time!", font=font_2, flush=True, fill="#FFFFFF")
-        disp.image(image, rotation)
-        time.sleep(7)
-        
-    if evolution_state == EVOLUTION_MAX:
-        image = Image.new("RGB", (width, height))
-        draw = ImageDraw.Draw(image)
-        draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-        draw.text((x,y), "Press any button to play again.", font=font_2, flush=True, fill="#FFFFFF")
-        disp.image(image, rotation)
-        while True:
-            if buttonA.value or buttonB.value:
-                evolution_state = 0
-                total_lux_val = 0
-                image_count = 0
-                break
-    else:
-        r, g, b, c = apds.color_data
-        curr_lux = colorutility.calculate_lux(r, g, b)
-        #apparently the lux can be less than 0
-        if curr_lux > 0:
-            total_lux_val += curr_lux
-        text_str = str(total_lux_val)
+
+        if evolution_state == EVOLUTION_MAX:
+            draw.text((x,y), "Press any button to play again.", font=font_2, flush=True, fill="#FFFFFF")
+            disp.image(image, rotation)
+            while True:
+                if buttonA.value or buttonB.value:
+                    evolution_state = 0
+                    total_lux_val = 0
+                    image_count = 0
+                    break
+        else:
+            draw.text((x,y), "evolution time!", font=font_2, flush=True, fill="#FFFFFF")
+            disp.image(image, rotation)
+            time.sleep(7)
+            
+    r, g, b, c = apds.color_data
+    curr_lux = colorutility.calculate_lux(r, g, b)
+    #apparently the lux can be less than 0
+    if curr_lux > 0:
+        total_lux_val += curr_lux
+    text_str = str(total_lux_val)
         
     curr_image_str = evolution_image_set.evolution_image_set[evolution_state][image_count%4]
     curr_image = Image.open(curr_image_str).convert('RGBA')
