@@ -107,4 +107,5 @@ while True:
     #draw.text((x+100,y), random.choice(["dude","bro","brother","my man", "my guy"]), font=font_2, fill="#5E1560")
     # Display image.
     disp.image(curr_image, rotation)
+    image_count += 1
     time.sleep(1)
