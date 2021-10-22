@@ -83,6 +83,8 @@ while True:
     if total_lux_val >= (evolution_state+1)*LUX_STEP:
         evolution_state += 1
         #evolve
+        image = Image.new("RGB", (width, height))
+        draw = ImageDraw.Draw(image)
         draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
         draw.text((x,y), "evolution time!", font=font_2, flush=True, fill="#FFFFFF")
         disp.image(image, rotation)
@@ -98,7 +100,6 @@ while True:
         
     curr_image_str = evolution_image_set.evolution_image_set[evolution_state][image_count%4]
     curr_image = Image.open(curr_image_str).convert('RGBA')
-    
     
     
     draw = ImageDraw.Draw(curr_image)
