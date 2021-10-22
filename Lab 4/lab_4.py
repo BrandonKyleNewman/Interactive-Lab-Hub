@@ -83,7 +83,7 @@ while True:
         #evolve
         draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
         disp.image(image, rotation)
-        draw.text((x,y), "evolution time!", font=font, flush=True, fill="#5E1560")
+        draw.text((x,y), "evolution time!", font=font_2, flush=True, fill="#FFFFFF")
         time.sleep(7)
         
     if evolution_state == EVOLUTION_MAX:
