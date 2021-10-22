@@ -84,7 +84,8 @@ while True:
     if evolution_state == EVOLUTION_MAX:
         break
     
-    curr_image = evolution_image_set.evolution_image_set[evolution_state][image_count%4]
+    curr_image_str = evolution_image_set.evolution_image_set[evolution_state][image_count%4]
+    curr_image = Image.open(curr_image_str).convert('RGBA')
     
     r, g, b, c = apds.color_data
     curr_lux = colorutility.calculate_lux(r, g, b)
