@@ -90,7 +90,7 @@ while True:
         draw = ImageDraw.Draw(image)
         draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 
-        if evolution_state == EVOLUTION_MAX:
+        if evolution_state == EVOLUTION_MAX+1:
             draw.text((x,y), "Press any button to play again.", font=font_2, flush=True, fill="#FFFFFF")
             disp.image(image, rotation)
             while True:
