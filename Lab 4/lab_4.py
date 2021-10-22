@@ -94,7 +94,7 @@ while True:
             draw.text((x,y), "Press any button to play again.", font=font_2, flush=True, fill="#FFFFFF")
             disp.image(image, rotation)
             while True:
-                if buttonA.value or buttonB.value:
+                if not buttonA.value or not buttonB.value:
                     evolution_state = 0
                     total_lux_val = 0
                     image_count = 0
