@@ -3,7 +3,7 @@ import subprocess
 import digitalio
 import board
 import random
-import evolution_image_set as evolution_images
+import evolution_image_set
 import adafruit_rgb_display.st7789 as st7789
 from PIL import Image, ImageDraw, ImageFont
 from adafruit_apds9960.apds9960 import APDS9960
@@ -84,7 +84,7 @@ while True:
     if evolution_state == EVOLUTION_MAX:
         break
     
-    curr_image = evolution_images[evolution_state][image_count%4]
+    curr_image = evolution_image_set.evolution_image_set[evolution_state][image_count%4]
     
     r, g, b, c = apds.color_data
     curr_lux = colorutility.calculate_lux(r, g, b)
