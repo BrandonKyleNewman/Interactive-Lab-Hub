@@ -69,6 +69,10 @@ font_2 = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 1
 backlight = digitalio.DigitalInOut(board.D22)
 backlight.switch_to_output()
 backlight.value = True
+buttonA = digitalio.DigitalInOut(board.D23)
+buttonB = digitalio.DigitalInOut(board.D24)
+buttonA.switch_to_input()
+buttonB.switch_to_input()
 
 EVOLUTION_MAX = 3
 LUX_STEP = 10000
@@ -82,7 +86,6 @@ while True:
     
     if total_lux_val >= (evolution_state+1)*LUX_STEP:
         evolution_state += 1
-        #evolve
         image = Image.new("RGB", (width, height))
         draw = ImageDraw.Draw(image)
         draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
@@ -91,20 +94,31 @@ while True:
         time.sleep(7)
         
     if evolution_state == EVOLUTION_MAX:
-        text_str = "Press any button to play again"
+        image = Image.new("RGB", (width, height))
+        draw = ImageDraw.Draw(image)
+        draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+        draw.text((x,y), "Press any button to play again.", font=font_2, flush=True, fill="#FFFFFF")
+        disp.image(image, rotation)
+        while True:
+            if buttonA.value or buttonB.value:
+                evolution_state = 0
+                total_lux_val = 0
+                image_count = 0
+                break
     else:
         r, g, b, c = apds.color_data
         curr_lux = colorutility.calculate_lux(r, g, b)
-        total_lux_val += curr_lux
+        #apparently the lux can be less than 0
+        if curr_lux > 0:
+            total_lux_val += curr_lux
         text_str = str(total_lux_val)
         
     curr_image_str = evolution_image_set.evolution_image_set[evolution_state][image_count%4]
     curr_image = Image.open(curr_image_str).convert('RGBA')
     
-    
     draw = ImageDraw.Draw(curr_image)
     draw.text((x,y), text_str, font=font, flush=True, fill="#5E1560")
-            
     disp.image(curr_image, rotation)
+    
     image_count += 1
     time.sleep(1)
