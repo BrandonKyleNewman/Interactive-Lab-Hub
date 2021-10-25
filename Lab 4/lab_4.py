@@ -102,7 +102,7 @@ while True:
         else:
             draw.text((x,y), "evolution time!", font=font_2, flush=True, fill="#FFFFFF")
             disp.image(image, rotation)
-            time.sleep(7)
+            time.sleep(5)
             
     r, g, b, c = apds.color_data
     curr_lux = colorutility.calculate_lux(r, g, b)
