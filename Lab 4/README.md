@@ -286,6 +286,7 @@ https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%204/m
 First physical device:
 
 https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/0bc072f091a128fd80155b9a928cd6e24deea3dd/Lab%204/IMG_1091.jpeg
+
 https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/0bc072f091a128fd80155b9a928cd6e24deea3dd/Lab%204/IMG_1092.jpeg
 
 After I finished this though, I realized that this could be extended beyond a virtual pet: It would be an attachment to a flower pot that could help find the right lighting situation in a house for a given plant. 
@@ -299,6 +300,7 @@ https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%204/m
 Potted Plant Prototype:
 
 https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%204/media/IMG_1129.jpeg
+
 https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%204/media/IMG_1130.jpeg
 
 User Testing:
