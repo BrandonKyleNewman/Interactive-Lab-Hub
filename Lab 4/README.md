@@ -277,8 +277,29 @@ We encourage you to try using these controls, **while** paying particular attent
 ### Part F
 ### Record
 
-Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
-* "Looks like": shows how the device should look, feel, sit, weigh, etc.
-* "Works like": shows what the device can do
-* "Acts like": shows how a person would interact with the device
+My initial prototyping and brainstorming was about a Tamagotchi-like game that would use the APDS-9960 sensor to detect light, and use that to evolve the little character into a nice big houseplant! It would look like a handheld device, it would work like a virtual pet that responses to light, and it would act like a virtual pet that responses to light and can be restarted when the pet reached its maximum evolution state.
 
+Brainstorm:
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%204/media/game-brainstorm.pdf
+
+First physical device:
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/0bc072f091a128fd80155b9a928cd6e24deea3dd/Lab%204/IMG_1091.jpeg
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/0bc072f091a128fd80155b9a928cd6e24deea3dd/Lab%204/IMG_1092.jpeg
+
+After I finished this though, I realized that this could be extended beyond a virtual pet: It would be an attachment to a flower pot that could help find the right lighting situation in a house for a given plant. 
+
+Unfortunately, I did not have the time to change the code in a satisfactory way from the virtual pet, but I was able to do a quick mock up with images, and then create a cardboard "shell" for the virtual pet. This idea was for it to feel like a normal pot for a plant, but provide the user with helpful information, and then the user could move the plant around to find the ideal lighting situation:
+
+Brainstorm:
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%204/media/no-game.pdf
+
+Potted Plant Prototype:
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%204/media/IMG_1129.jpeg
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%204/media/IMG_1130.jpeg
+
+User Testing:
+I was able to get my girlfriend to agree to doing a test of the physical plant prototype, although it still had the virtual pet interface. Unfortunately, the lighting in our kitch was too good, and the pet evolved very quickly, although she quickly understood that the number indicated the status of the plant once she noticed it:
+https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%204/media/IMG_1132.MOV
+
+The Future:
+I really wish I had more time to create a suitable attachment to an actual plant pot, and modified the interface to not be a game. I can imagine a way you could select what plant you had in the pot, and it would help you find the right level of light in your house for that particular plant.
