@@ -293,7 +293,7 @@ After I finished this though, I realized that this could be extended beyond a vi
 
 Unfortunately, I did not have the time to change the code in a satisfactory way from the virtual pet, but I was able to do a quick mock up with images, and then create a cardboard "shell" for the virtual pet. This idea was for it to feel like a normal pot for a plant, but provide the user with helpful information, and then the user could move the plant around to find the ideal lighting situation:
 
-Brainstorm:
+Potted Plant Design:
 
 https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%204/media/no-game.pdf
 
