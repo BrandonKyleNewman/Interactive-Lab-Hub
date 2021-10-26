@@ -74,7 +74,7 @@ https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/0bc072f091a128fd80
 
 https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/0bc072f091a128fd80155b9a928cd6e24deea3dd/Lab%204/IMG_1092.jpeg
 
-After I finished this though, I realized that this could be extended beyond a virtual pet: It would be an attachment to a flower pot that could help find the right lighting situation in a house for a given plant. 
+After I finished this though, I realized that this could be extended beyond a virtual pet: It would be an attachment to a flower pot that could help find the right lighting situation in a house for a given plant. It would look like a normal pot for a plant, it would work by getting light from the sensor and displaying that information to the screen, and it would act like a basic way to give a user information about their plants position in relation to the light, and it would respond to where the user positioned the plant.
 
 Unfortunately, I did not have the time to change the code in a satisfactory way from the virtual pet, but I was able to do a quick mock up with images, and then create a cardboard "shell" for the virtual pet. This idea was for it to feel like a normal pot for a plant, but provide the user with helpful information, and then the user could move the plant around to find the ideal lighting situation:
 
