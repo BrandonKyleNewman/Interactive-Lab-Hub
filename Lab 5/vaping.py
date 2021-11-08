@@ -1,6 +1,7 @@
 #This example is directly copied from the Tensorflow examples provided from the Teachable Machine.
 import tensorflow.keras
 import qwiic_button
+import qwiic_i2c
 from PIL import Image, ImageOps
 import numpy as np
 import cv2
