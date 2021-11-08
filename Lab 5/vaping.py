@@ -60,13 +60,14 @@ while(True):
     normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
     # Load the image into the array
     data[0] = normalized_image_array
+    brightness = 100
 
     # run the inference
     prediction = model.predict(data)
     print("I think its a:",labels[np.argmax(prediction)])
     if labels[np.argmax(prediction)] == 'Vaping':
-      print("brightness pls")
-      my_button1.LED_on(100)
+      my_button1.LED_on(brightness)
+      system.sleep(5)
     else:
       my_button1.LED_off()
 
