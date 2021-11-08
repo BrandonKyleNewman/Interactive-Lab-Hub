@@ -179,7 +179,7 @@ For the device itself, I wasn't able to come up with a costume that I thought ma
 
 User Test (Note, unfortunately, no one wanted to be seen on camera with an e-cigarette device for a graded assignment (fair). So in this video I just demonstrate how it works, and some frustrations I have with it in its current state):
 
-![Alt Text](https://drive.google.com/file/d/1bjWbPD8Hj7L5seWX22PYzY2LkIPzMa3K/view?usp=sharing)
+https://drive.google.com/file/d/1bjWbPD8Hj7L5seWX22PYzY2LkIPzMa3K/view?usp=sharing
 
 Conclusion:
 
