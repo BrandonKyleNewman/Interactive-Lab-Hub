@@ -63,7 +63,8 @@ while(True):
     data[0] = normalized_image_array
     brightness = 250
     my_button.begin()
-    my_button.LED_on(brightness)
+    if my_button.is_button_pressed() == True:
+      my_button.LED_on(brightness)
 
     # run the inference
     prediction = model.predict(data)
