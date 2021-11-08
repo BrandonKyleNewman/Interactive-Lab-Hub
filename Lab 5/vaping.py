@@ -1,6 +1,6 @@
 #This example is directly copied from the Tensorflow examples provided from the Teachable Machine.
-
 import tensorflow.keras
+import qwiic_button
 from PIL import Image, ImageOps
 import numpy as np
 import cv2
@@ -40,7 +40,8 @@ for line in f.readlines():
     if(len(line)<1):
         continue
     labels.append(line.split(' ')[1].strip())
-
+    
+my_button = qwiic_button.QwiicButton()
 
 while(True):
     if webCam:
@@ -48,6 +49,8 @@ while(True):
 
     rows, cols, channels = img.shape
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+    if my_button.is_button_pressed():
+      print("ok")
 
     size = (224, 224)
     img =  cv2.resize(img, size, interpolation = cv2.INTER_AREA)
@@ -63,7 +66,7 @@ while(True):
     prediction = model.predict(data)
     print("I think its a:",labels[np.argmax(prediction)])
     
-    if labels[np.argmax(prediction)] == 'vaping':
+    if labels[np.argmax(prediction)] == 'Vaping':
       #alarm
       print("Please stop vaping")
 
