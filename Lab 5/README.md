@@ -162,6 +162,7 @@ Cumbersome. Not exactly a nature fit for a standalone device, would be better to
 ### Part 2.
 
 Prototyping and Design Exploration:
+
 ![Alt Text](https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%205/media/lab_5_designs.pdf)
 
 Experimentation Round 2:
