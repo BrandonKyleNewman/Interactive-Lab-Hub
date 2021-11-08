@@ -64,8 +64,8 @@ while(True):
     # run the inference
     prediction = model.predict(data)
     print("I think its a:",labels[np.argmax(prediction)])
-    if my_button1.is_button_pressed() == True:
-      print("holy fuck")
+    if labels[np.argmax(prediction)] == 'Not Vaping':
+      print("why cmon stupid")
     if labels[np.argmax(prediction)] == 'Vaping':
       my_button1.LED_on(100)
     else:
