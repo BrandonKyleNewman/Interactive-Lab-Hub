@@ -1,4 +1,3 @@
-
 #This example is directly copied from the Tensorflow examples provided from the Teachable Machine.
 
 import tensorflow.keras
@@ -63,6 +62,10 @@ while(True):
     # run the inference
     prediction = model.predict(data)
     print("I think its a:",labels[np.argmax(prediction)])
+    
+    if labels[np.argmax(prediction)] == 'vaping':
+      #alarm
+      print("Please stop vaping")
 
     if webCam:
         if sys.argv[-1] == "noWindow":
