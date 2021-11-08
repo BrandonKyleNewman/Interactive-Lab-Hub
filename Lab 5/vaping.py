@@ -36,7 +36,7 @@ else:
 model = tensorflow.keras.models.load_model('converted_keras/vaping_keras_model.h5')
 # Load Labels:
 labels=[]
-f = open("labels.txt", "r")
+f = open("converted_keras/labels.txt", "r")
 for line in f.readlines():
     if(len(line)<1):
         continue
