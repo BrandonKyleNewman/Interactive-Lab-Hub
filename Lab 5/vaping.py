@@ -42,7 +42,7 @@ for line in f.readlines():
         continue
     labels.append(line.split(' ')[1].strip())
     
-my_button1 = qwiic_button.QwiicButton()
+my_button = qwiic_button.QwiicButton()
 
 while(True):
     if webCam:
@@ -61,16 +61,17 @@ while(True):
     normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
     # Load the image into the array
     data[0] = normalized_image_array
-    brightness = 100
+    brightness = 250
+    my_button.begin()
 
     # run the inference
     prediction = model.predict(data)
-    print("I think its a:",labels[np.argmax(prediction)])
+    print("I think its a: ",labels[np.argmax(prediction)])
     if labels[np.argmax(prediction)] == 'Vaping':
-      my_button1.LED_on(brightness)
+      my_button.LED_on(brightness)
       time.sleep(5)
     else:
-      my_button1.LED_off()
+      my_button.LED_off()
 
     if webCam:
         if sys.argv[-1] == "noWindow":
