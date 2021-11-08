@@ -131,7 +131,7 @@ More test data
 
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
-* What can you use X for?
+* What can you use X for? 
 * What is a good environment for X?
 * What is a bad environment for X?
 * When will X break?
@@ -144,5 +144,13 @@ During the lecture, we mentioned questions to help characterize a material:
 ### Part 2.
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
+
+Experimentation Round 2:
+
+I decided to try out the MediaPipe piece to see if I could get it to recognize my hand. Unfortunately, I found that while it was robust enough to find my fingers if splayed out, it still wasn't up to snuff to show the indicator points if my hand was curled up and around my e-cigarette. I decided to still go with the TeachableMachine, and try a greater variety of poses with objects that weren't e-cigarettes, such as headphones and an energy drink. 
+
+<image>
+
+It worked out really well on the TeachableMachine demo side! You can see my state of shock when after trying on headphones, drinking from a can, and just existing, I put the e-cigarette up to my mouth and it nailed it on its first try. 
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
