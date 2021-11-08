@@ -110,9 +110,9 @@ Not enough testing data around what type of object is close to my face.
 I wonder if I train too much with my right hand with different objects, if that orientation specificity would affect e-cigarette detection.
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
-1. Are they aware of the uncertainties in the system? I don't think initially. 
+1. Are they aware of the uncertainties in the system? 
 
-There's nothing to suggest that bringing any item close to your face would cause an issue.
+I don't think initially. There's nothing to suggest that bringing any item close to your face would cause an issue.
 
 2. How bad would they be impacted by a miss classification? 
 
@@ -124,7 +124,7 @@ Warnings on startup, occasional popups that say the application is still running
 
 4. Are there optimizations you can try to do on your sense-making algorithm. 
 
-More test data
+More test data.
 
 ### Part D
 ### Characterize your own Observant system
@@ -132,25 +132,49 @@ More test data
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for? 
+
+Detecting if an e-cigarette is on or close to one's mouth.
+
 * What is a good environment for X?
+
+At a desk.
+
 * What is a bad environment for X?
+
+Anywhere without a direct headon view (bed, lounging). 
+
 * When will X break?
+
+If a similarly colored/shaped object is moved close to the mouth. For example, a yellow candy bar might trigger the light to go off.
+
 * When it breaks how will X break?
+
+It will not be a precise indicator of e-cigarette usage.
+
 * What are other properties/behaviors of X?
+
+Can detect a background, or just using something close to your face that isn't small and yellow.
+
 * How does X feel?
 
-**\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+Cumbersome. Not exactly a nature fit for a standalone device, would be better to use as an application on someones computer already in use.
 
 ### Part 2.
 
-Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
+Prototyping and Design Exploration:
+![Alt Text](https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/Fall2021/Lab%205/media/lab_5_designs.pdf)
 
 Experimentation Round 2:
 
 I decided to try out the MediaPipe piece to see if I could get it to recognize my hand. Unfortunately, I found that while it was robust enough to find my fingers if splayed out, it still wasn't up to snuff to show the indicator points if my hand was curled up and around my e-cigarette. I decided to still go with the TeachableMachine, and try a greater variety of poses with objects that weren't e-cigarettes, such as headphones and an energy drink. 
 
-<image>
+![Alt Text](https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/6279fd1e39d5cefd4a2ab0df5154f678e772e2a0/Lab%205/media/Screen%20Shot%202021-11-08%20at%208.35.45%20AM.png)
 
 It worked out really well on the TeachableMachine demo side! You can see my state of shock when after trying on headphones, drinking from a can, and just existing, I put the e-cigarette up to my mouth and it nailed it on its first try. 
 
-**\*\*\*Include a short video demonstrating the finished result.\*\*\***
+![Alt Text](https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/6279fd1e39d5cefd4a2ab0df5154f678e772e2a0/Lab%205/media/Screen%20Shot%202021-11-08%20at%208.35.45%20AM.png)
+
+For the device itself, I wasn't able to come up with a costume that I thought made a lot of sense (I believe this would work better as an application on a computer a user is already using, but it was fun to explore devices anyways). Inititally I thought that using the speaker would be the best option for user feedback, but I then decided it would be best to use the LED light. The light is less intrusive than a speaker, as the user could be in a meeting. The device with the camera would need to be in view of the user anyways, so the light just provides some nice contextual feedback.
+
+User Test (Note, unfortunately, no one wanted to be seen on camera with an e-cigarette device for a graded assignment (fair). So in this video I just demonstrate how it works, and some frustrations I have with it in its current state):
+![Alt Text](https://drive.google.com/file/d/1bjWbPD8Hj7L5seWX22PYzY2LkIPzMa3K/view?usp=sharing)
