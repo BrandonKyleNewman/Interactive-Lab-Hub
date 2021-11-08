@@ -41,7 +41,8 @@ for line in f.readlines():
         continue
     labels.append(line.split(' ')[1].strip())
     
-my_button = qwiic_button.QwiicButton()
+my_button1 = qwiic_button.QwiicButton()
+my_button2 = qwiic_button.QwiicButton(0x5B)
 
 while(True):
     if webCam:
@@ -49,8 +50,10 @@ while(True):
 
     rows, cols, channels = img.shape
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
-    if my_button.is_button_pressed():
+    if my_button1.is_button_pressed():
       print("ok")
+    if my_button2.is_button_pressed():
+      print("ooooooook")
 
     size = (224, 224)
     img =  cv2.resize(img, size, interpolation = cv2.INTER_AREA)
