@@ -5,6 +5,7 @@ from PIL import Image, ImageOps
 import numpy as np
 import cv2
 import sys
+import time
 
 
 # Disable scientific notation for clarity
@@ -67,7 +68,7 @@ while(True):
     print("I think its a:",labels[np.argmax(prediction)])
     if labels[np.argmax(prediction)] == 'Vaping':
       my_button1.LED_on(brightness)
-      system.sleep(5)
+      time.sleep(5)
     else:
       my_button1.LED_off()
 
