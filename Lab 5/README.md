@@ -173,9 +173,14 @@ I decided to try out the MediaPipe piece to see if I could get it to recognize m
 
 It worked out really well on the TeachableMachine demo side! You can see my state of shock when after trying on headphones, drinking from a can, and just existing, I put the e-cigarette up to my mouth and it nailed it on its first try. 
 
-![Alt Text](https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/6279fd1e39d5cefd4a2ab0df5154f678e772e2a0/Lab%205/media/Screen%20Shot%202021-11-08%20at%208.35.45%20AM.png)
+![Alt Text](https://github.com/BrandonKyleNewman/Interactive-Lab-Hub/blob/c6c508699f04fd4f8f133eada015d95917772048/Lab%205/media/Screen%20Shot%202021-11-08%20at%208.38.17%20AM.png)
 
 For the device itself, I wasn't able to come up with a costume that I thought made a lot of sense (I believe this would work better as an application on a computer a user is already using, but it was fun to explore devices anyways). Inititally I thought that using the speaker would be the best option for user feedback, but I then decided it would be best to use the LED light. The light is less intrusive than a speaker, as the user could be in a meeting. The device with the camera would need to be in view of the user anyways, so the light just provides some nice contextual feedback.
 
 User Test (Note, unfortunately, no one wanted to be seen on camera with an e-cigarette device for a graded assignment (fair). So in this video I just demonstrate how it works, and some frustrations I have with it in its current state):
+
 ![Alt Text](https://drive.google.com/file/d/1bjWbPD8Hj7L5seWX22PYzY2LkIPzMa3K/view?usp=sharing)
+
+Conclusion:
+
+The user test wasn't as hopeful as I would have liked. It's frustrating, because using the TeachableMachine website was almost always perfectly accurate; I could try any number of things close to my face and I would get the desired result, but once I put the e-cigarette close to my face, it would indicate that. It was exciting! But once I put it on the pi, as you can see in the video, it took a lot of positioning to get the red indicator to show. Perhaps my original hypothesis that a teachable machine isn't the perfect way to go for this usecase is valid here, but the descrepency is definitely annoying. I also wish I had more time to explore my concept of using the device in bed, however, I think this would have yielded even more wild results. Overall, I had a good time desigining a device that is somewhat useful, as well as exploring the different technologies; I used OpenCV in undergrad and its cool to see all these things built in!
